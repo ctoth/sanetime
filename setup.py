@@ -1,5 +1,8 @@
 #!/usr/bin/env python
-from distutils.core import setup
+try:
+   from setuptools import Setup
+except ImportError:
+    from distutils.core import setup
 
 setup(
     name='sanetime',
